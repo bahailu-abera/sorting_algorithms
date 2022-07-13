@@ -31,7 +31,5 @@ void bubble_sort(int *array, size_t size)
 				print_array((const int *)array, size);
 			}
 		}
-		/* size -= 1; */
-		/* printf("swapped value is : %d\n", swapped); */
 	}
 }
