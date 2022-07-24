@@ -40,6 +40,9 @@ void counting_sort(int *array, size_t size)
 	int *count, *output, max_value, i;
 	size_t j;
 
+	if (size < 2)
+		return;
+
 	max_value = max(array, size);
 	max_value += 1;
 
