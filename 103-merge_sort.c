@@ -71,6 +71,7 @@ void __merge(int *array, int low, int middle, int high)
 
 	while (j <= hi)
 		array[k] = tmp_array[j], k += 1, j += 1;
+	free(tmp_array);
 
 	printf("[Done]: ");
 	for (i = low; i <= high; i++)
