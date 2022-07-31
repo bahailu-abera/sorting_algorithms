@@ -62,6 +62,20 @@ typedef struct deck_node_s
 	struct deck_node_s *next;
 } deck_node_t;
 
+/**
+ * struct heap_s - heap data structure
+ *
+ * @array: the array
+ * @size: the size of the heap
+ * @length: the number of elements in the heap
+ *
+ */
+typedef struct heap_s
+{
+	int *array;
+	int size;
+	int length;
+} heap_t;
 
 void print_list(const listint_t *list);
 void print_array(const int *array, size_t size);
